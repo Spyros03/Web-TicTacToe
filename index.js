@@ -6,7 +6,16 @@ var alertbox = document.getElementById("alert-box");
 var turn = 1;
 var playSymbol = "X"
 var isOver = false;
+var table = document.getElementById("table");
+var play = document.getElementById("play-button");
+var reset = document.getElementById("reset")
 
+
+function pressPlay(){
+    play.style.display = "none";
+    table.style.display = "block";
+    reset.style.display = "block";
+}
 
 function turnPlayed(box){
     if (board[box].innerHTML !== ""){

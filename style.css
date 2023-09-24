@@ -54,6 +54,7 @@ header h1{
     height: 60%;
     box-sizing: border-box;
     width: 90%;
+    display: none;
 }
 
 div.col a{
@@ -79,7 +80,37 @@ div.alert-box {
     margin: 15px;
 }
 
-.table-area button{
+.container div.play-button{
+    text-align: center;
+    margin: auto;
+    height: 60%;
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 190px;
+}
+
+.container div.play-button a{
+    text-decoration: none;
+    font-weight:900;
+    font-size: 120px;
+    color: #fff;
+    transition: color 0.25s;
+}
+
+.container div.play-button a:hover{
+    color: rgba(16, 184, 86, 0.712);
+}
+
+.container div.reset-button{
+    display: none;
+    width: inherit;
+    position: absolute;
+    bottom: 125px;
+}
+
+.container button{
+    display: block;
+    margin: auto;
     margin-top: 35px;
     font-size: 30px;
     padding: 7px 35px;
